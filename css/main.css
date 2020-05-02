@@ -1,60 +1,117 @@
-body,
-html {
-	height: 100%;
-	width: 100%;
-	box-sizing: border-box;
-	font-size: 10px;
-}
-body {
-	background-image: linear-gradient(60deg, rgba(191, 32, 159, 0.25) 5%, rgba(58, 197, 105, 0.5)), url('https://source.unsplash.com/daily');
-	background-repeat: no-repeat;
-	background-position: center;
-	-webkit-background-size: cover;
-	background-size: cover;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.6rem;
-}
-h1 {
-	font-size: 5rem;
+* {
+  box-sizing: border-box;
 }
 
-#wrapper {
-	min-height: 100%;
-	position: relative;
+html {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://source.unsplash.com/daily');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #2EC4B6;
+}
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+h1,
+h2,
+h3 {
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+header h1,
+header h2,
+header h3 {
+  margin: 10px 0px;
+}
+
+header h2,
+header h3 {
+  color: #6E7783;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  padding: 40px;
+  position: relative;
 }
 
 .avatar {
-	height: 150px;
-	width: 150px;
-	display: inline-block;
-}
-.avatar img {
-	width: 100%;
-	height: auto;
-	display: inline-block;
-	border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  display: block;
+  border-radius: 50%;
 }
 
-.main {
-	background-color: #f0f5f9;
-	border-radius: 5px;
-	width: 100%;
-	position: relative;
-	padding: 30px 0;
-	text-align: center;
-	position: absolute;
-	left: 50%;
-	right: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-}
-.main p {
-	font-size: 2rem;
+@media (min-height: 940px) {
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
 }
 
-@media screen and (min-width: 768px) {
-	.main {
-		width: 500px;
-		padding: 50px 20px;
-	}
+@media screen and (min-width: 800px) {
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wrapper {
+    clip-path: polygon(0 0, 40% 0, 55% 100%, 0% 100%);
+  }
+
+  .container {
+    width: auto;
+    padding: 40px 60px;
+  }
 }
