@@ -11,107 +11,21 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://source.unsplash.com/daily?topics=technology');
-  background-size: cover;
-  background-position: right center;
-  background-repeat: no-repeat;
-}
-
-a {
-  text-decoration: none;
-  color: #2EC4B6;
-}
-
-a:hover,
-a:active,
-a:focus {
-  text-decoration: none;
-}
-h1,
-h2,
-h3 {
-  color: inherit;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 2rem;
-}
-
-h2 {
-  font-size: 1.6rem;
-}
-
-h3 {
-  font-size: 1.4rem;
-}
-
-header {
-  margin-bottom: 50px;
-}
-
-header h1,
-header h2,
-header h3 {
-  margin: 10px 0px;
-}
-
-header h2,
-header h3 {
-  color: #6E7783;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.wrapper {
-  background-color: #fff;
-  height: 100%;
-  width: 100%;
+  background-color: #090909;
+  color: slategrey;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  padding: 40px;
-  position: relative;
+  padding: 20px;
+  text-align: center;
 }
 
 .avatar {
-  height: 150px;
-  width: 150px;
-  display: block;
+  width: 200px;
+  border: 2px solid slategray;
   border-radius: 50%;
-}
-
-@media (min-height: 940px) {
-  html,
-  body {
-    height: 100%;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .container {
-    width: 600px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .wrapper {
-    clip-path: polygon(0 0, 40% 0, 55% 100%, 0% 100%);
-  }
-
-  .container {
-    width: auto;
-    padding: 40px 60px;
-  }
 }
